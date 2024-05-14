@@ -152,7 +152,7 @@ export const getEvent =
       .toArray()
       .map((el) => {
         const name = el.find('.video-discription-text').text()
-        const link = el.data('mp4-url')
+        const link = el.data('data-embed-url')
 
         const [thumbnailBase] = el.data('thumbnail').split('-preview-')
         const thumbnail = `${thumbnailBase}-preview.jpg`
